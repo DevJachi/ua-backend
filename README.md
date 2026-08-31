@@ -1,7 +1,5 @@
 # Ugwu Academy — Backend API
 
-> **GitHub Description:** REST API for an online examination platform — handles user auth, role-based access, exam management, automated scoring, and transactional email notifications.
-
 ---
 
 A Node.js/Express backend powering the Ugwu Academy online exam platform. Students register, verify their email, take exams, and receive pass/fail notifications. Admins can create exams and questions using time-limited admin codes to elevate their role.
