@@ -27,7 +27,6 @@ export const signup = async (req, res) => {
     //Generate Verification Code
     const verificationToken = generateVerificationToken();
 
-    // Create New User
     const user = new User({
       email,
       password: hashedPassword,
@@ -39,7 +38,6 @@ export const signup = async (req, res) => {
 
     await sendVerificationEmail(user.email, verificationToken);
 
-    // JWT
     generateTokenAndSetCookie(res, user._id);
 
     res.status(201).json({

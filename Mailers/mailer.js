@@ -1,12 +1,12 @@
 import nodemailer from "nodemailer";
 
-// Create transporter
+// Transporter
 export const transporter = nodemailer.createTransport({
-  host: "smtp.ethereal.email", // for testing only
+  host: "smtp.ethereal.email", 
   port: 587,
-  secure: false, // true for 465, false for others
+  secure: false, 
   auth: {
-    user: process.env.ETHEREAL_USER, // from Ethereal account
+    user: process.env.ETHEREAL_USER, 
     pass: process.env.ETHEREAL_PASS,
   },
 });
